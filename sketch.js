@@ -113,10 +113,10 @@ if (ground.x<0){
 }
 
   //pular quando tecla de espaço for pressionada
-  if(touches.legth >0 || keyDown("space") && trex.y>height / 2 - 50){
+  if(touches.length >0 || keyDown("space") && trex.y>height / 2 - 50){
     trex.velocityY = -7;
-  touches = []
   som_pular.play();
+  touches = []
   
   }
   
@@ -154,7 +154,7 @@ else if (estadojogo==FIM){
   groupobstaculo.setVelocityXEach(0);
   groupnuvem.setVelocityXEach(0);
   
-  if(touches.legth > 0 || mousePressedOver(reiniciar)){
+  if(touches.length > 0 || mousePressedOver(reiniciar)){
     reset()
   touches=[]
   
